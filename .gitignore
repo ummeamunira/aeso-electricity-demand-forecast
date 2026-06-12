@@ -1,0 +1,42 @@
+# Data — never commit raw or processed data files
+data/raw/*.csv
+data/raw/*.zip
+data/raw/*.xlsx
+data/processed/*.parquet
+data/processed/*.csv
+
+# Keep folder structure
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!models/.gitkeep
+
+# Models — large binary files
+models/*.pkl
+models/*.txt
+models/*.bin
+models/*.json
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+.env
+.venv
+env/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
